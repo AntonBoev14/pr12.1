@@ -14,7 +14,19 @@ int addint(int a, int b, int c) {
     return a + b + c;
 }
 
-
+int mainin()
+{
+    int a, b, c;
+    cout << "Введите значение а: ";
+    cin >> a;
+    cout << "введите значение b: ";
+    cin >> b;
+    cout << "введите значение c: ";
+    cin >> c;
+    cout << '\n';
+    cout << "результат: " << addint(a, b, c) << endl;
+    return 0;
+}
 
 double nemain()
 {
@@ -38,21 +50,7 @@ int main()
 
     cout << "результат: " << addint(a, b) << endl;
     cout << '\n';
+    nemain();
+    mainin();
     return 0;
 }
-int mainin()
-{
-    int a, b, c;
-    cout << "Введите значение а: ";
-    cin >> a;
-    cout << "введите значение b: ";
-    cin >> b;
-    cout << "введите значение c: ";
-    cin >> c;
-    cout << '\n';
-    cout << "результат: " << addint(a, b, c) << endl;
-    return 0;
-}
-
-
-
